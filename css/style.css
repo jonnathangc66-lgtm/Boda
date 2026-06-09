@@ -220,6 +220,67 @@ font-size:16px;
 
 left:4px;
 
+}/* ========================= */
+/* CORRECCION MOVILES */
+/* ========================= */
+
+html,
+body{
+width:100%;
+overflow-x:hidden;
+scroll-behavior:smooth;
+}
+
+#cover{
+width:100%;
+min-height:100vh;
+}
+
+.cover-image{
+width:100%;
+height:auto;
+display:block;
+}
+
+#invitation{
+display:none;
+position:relative;
+width:100%;
+min-height:100vh;
+background:#000;
+text-align:center;
+padding:20px 0;
+}
+
+@media(max-width:768px){
+
+#cover{
+min-height:100vh;
+}
+
+.cover-image{
+width:100%;
+height:auto;
+object-fit:contain;
+}
+
+#invitation{
+width:100%;
+}
+
+.invitation-full{
+width:100%;
+max-width:100%;
+height:auto;
+display:block;
+margin:0 auto;
+}
+
+#contadorOverlay{
+left:50%;
+transform:translateX(-50%);
+}
+
 }
 
 }
