@@ -109,7 +109,7 @@ position:absolute;
 
 /* BAJAR UN POCO */
 
-top:41%;
+top:30%;
 
 /* CENTRO EXACTO */
 
@@ -121,7 +121,7 @@ display:flex;
 
 /* SEPARACION DE LOS CUADROS */
 
-gap:18px;
+gap:12px;
 
 z-index:999;
 
