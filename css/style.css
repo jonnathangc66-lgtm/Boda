@@ -1,0 +1,225 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#000;
+overflow-x:hidden;
+font-family:Georgia, serif;
+}
+
+/* ========================= */
+/* PORTADA */
+/* ========================= */
+
+#cover{
+position:relative;
+width:100%;
+height:100vh;
+overflow:hidden;
+background:#000;
+transition:opacity 1s ease;
+}
+
+.cover-image{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
+
+/* ========================= */
+/* BOTON ABRIR */
+/* ========================= */
+
+#enterInvitation{
+position:absolute;
+left:50%;
+bottom:11%;
+transform:translateX(-50%);
+padding:35px 140px;
+font-size:52px;
+font-weight:bold;
+color:#2b1800;
+background:linear-gradient(
+180deg,
+#ffe8a6 0%,
+#f4cf72 50%,
+#d4af37 100%
+);
+border:4px solid #ffd67a;
+border-radius:18px;
+cursor:pointer;
+z-index:1000;
+box-shadow:
+0 0 35px rgba(255,215,0,.8),
+0 0 90px rgba(255,215,0,.5);
+transition:.3s;
+}
+
+#enterInvitation:hover{
+transform:translateX(-50%) scale(1.05);
+}
+
+/* ========================= */
+/* INVITACION */
+/* ========================= */
+
+#invitation{
+
+display:none;
+
+position:relative;
+
+width:100%;
+
+background:#000;
+
+text-align:center;
+
+padding:20px 0;
+
+}
+
+/* IMAGEN CENTRADA */
+
+.invitation-full{
+
+display:block;
+
+width:450px;
+
+max-width:95%;
+
+margin:0 auto;
+
+height:auto;
+
+}
+
+/* ========================= */
+/* CONTADOR */
+/* ========================= */
+
+#contadorOverlay{
+
+position:absolute;
+
+/* BAJAR UN POCO */
+
+top:37.4%;
+
+/* CENTRO EXACTO */
+
+left:50%;
+
+transform:translateX(-50%);
+
+display:flex;
+
+/* SEPARACION DE LOS CUADROS */
+
+gap:12px;
+
+z-index:999;
+
+}
+
+.counter-box{
+
+width:70px;
+
+height:55px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.counter-box span{
+
+display:block;
+
+width:100%;
+
+text-align:center;
+
+font-size:20px;
+
+font-weight:bold;
+
+color:#D4AF37;
+
+text-shadow:
+0 0 8px rgba(212,175,55,.8);
+
+}
+
+/* ========================= */
+/* ANIMACION */
+/* ========================= */
+
+.fadeIn{
+animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:768px){
+
+#enterInvitation{
+
+font-size:24px;
+
+padding:20px 50px;
+
+bottom:9%;
+
+}
+
+.invitation-full{
+
+width:95%;
+
+}
+
+#contadorOverlay{
+
+gap:18px;
+
+top:56.5%;
+
+}
+
+.counter-box span{
+
+font-size:16px;
+
+}
+
+/* AJUSTE SOLO PARA EL 158 */
+
+#days{
+
+left:4px;
+
+}
+
+}
